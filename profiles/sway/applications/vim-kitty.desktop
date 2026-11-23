@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Vim (Kitty)
+Exec=@KITTY@ -- @VIM@ %F
+Icon=vim
+Terminal=false
+NoDisplay=true
+MimeType=text/plain;text/markdown;

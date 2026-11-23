@@ -1,0 +1,5 @@
+[user]
+  name = Krzysztof Watras
+  email = krzysztof.watras@axpo.pl
+[core]
+  sshCommand = ssh -i ~/.ssh/id_ed25519_axpl_gitlab -F /dev/null

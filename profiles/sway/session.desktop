@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Nix Sway
+Comment=Home Manager Sway session
+Exec=/home/chris/.local/state/nix/profiles/home-manager/home-path/bin/start-nix-sway
+Type=Application
+DesktopNames=sway

@@ -1,0 +1,5 @@
+[user]
+  name = Krzysztof Watras
+  email = krzysztof.watras@gmail.com
+[core]
+  sshCommand = ssh -i ~/.ssh/id_ed25519_priv_gitlab -F /dev/null

@@ -1,0 +1,16 @@
+* { font-family: "IBM Plex Sans", sans-serif; font-size: 10px; }
+window#waybar { background: #141a24; color: #e6eaf0; }
+#workspaces button { min-width: 18px; color: #b6c8d8; padding: 0 5px; border: 0; border-radius: 0; }
+#workspaces button label { font-family: "IBM Plex Sans"; font-size: 16px; }
+#workspaces button.focused { background: #293c50; color: #fff; }
+#custom-wifi, #custom-bluetooth, #custom-volume, #custom-power {
+  font-family: "Hack Nerd Font Mono";
+  min-width: 28px; padding: 0; font-size: 22px;
+}
+#custom-wifi label, #custom-bluetooth label, #custom-volume label, #custom-power label {
+  min-width: 28px; padding: 0; margin: 0;
+}
+#custom-wifi.off, #custom-bluetooth.off, #custom-volume.off { color: #8d9bad; }
+#custom-wifi:hover, #custom-bluetooth:hover, #custom-volume:hover, #custom-power:hover { background: #35536b; color: #fff; }
+#clock { padding: 0 10px; color: #d3deeb; font-size: 16px; }
+#custom-power { background: #293c50; color: #d3deeb; }

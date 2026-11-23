@@ -1,0 +1,36 @@
+set $mod Mod4
+set $term @KITTY@
+set $menu @LAUNCHER@
+default_border pixel 2
+font pango:IBM Plex Sans 10
+output * bg @WALLPAPER@ fill
+xwayland enable
+exec @DBUS_UPDATE@ --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway XDG_SESSION_TYPE=wayland
+exec @WAYBAR@ -c ~/.config/waybar/top.jsonc -s ~/.config/waybar/style.css
+include @CONFIG_HOME@/sway/lock.conf
+include @CONFIG_HOME@/sway/shortcuts.conf
+bindsym $mod+Return exec $term
+bindsym $mod+space exec $menu
+bindsym $mod+d exec $menu
+bindsym $mod+q kill
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r restart
+bindsym $mod+Shift+d exec @WDISPLAYS@
+bindsym --release button3 exec @WDISPLAYS@
+bindsym Print exec @SCREENSHOT@
+bindsym XF86AudioRaiseVolume exec @PACTL@ set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec @PACTL@ set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute exec @PACTL@ set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioMicMute exec @PACTL@ set-source-mute @DEFAULT_SOURCE@ toggle
+bindsym XF86MonBrightnessUp exec @BRIGHTNESSCTL@ set +5%
+bindsym XF86MonBrightnessDown exec @BRIGHTNESSCTL@ set 5%-
+bindsym $mod+1 exec @BROWSER_WORKSPACE@
+bindsym $mod+2 exec @TERMINAL_WORKSPACE@
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+bindsym $mod+5 workspace number 5
+bindsym $mod+6 workspace number 6
+bindsym $mod+7 workspace number 7
+bindsym $mod+8 workspace number 8
+bindsym $mod+9 workspace number 9
+bindsym $mod+0 workspace number 10
